@@ -81,9 +81,9 @@
 <body>
   <main class="wrap">
     <header>
-      <div class="eyebrow">Quick team performance tool</div>
-      <h1>Crew Sales Calculator</h1>
-      <p>Enter your AC, add up to 16 GC values, and enter total crew hours. Your results update when you calculate.</p>
+      <div class="eyebrow">For Reports</div>
+      <h1>Service Manager Calculator</h1>
+      <p>Enter your Projected AC.</p>
     </header>
 
     <section class="panel" aria-label="Calculator">
@@ -99,13 +99,13 @@
           <span class="hint">Enter total crew hours.</span>
         </div>
         <div class="field full">
-          <label for="gc">GC values (up to 16 numbers)</label>
+          <label for="gc">GC (Guest Count)</label>
           <textarea id="gc" inputmode="decimal" placeholder="Example: 12, 15, 8.5, 10 ..."></textarea>
-          <span class="hint">Separate each number with a comma. The calculator adds them together to get total GC. You can enter fewer than 16 values.</span>
+          <span class="hint">Enter GC. Separate with Comma.</span>
         </div>
         <div class="field full">
           <label>Crew Rate</label>
-          <div class="rate"><span>$68.75</span><small>Fixed rate per crew hour</small></div>
+          <div class="rate"><span>68.75</span><small>Fixed rate per crew hour</small></div>
         </div>
       </div>
 
@@ -119,7 +119,7 @@
         <h2>Your results</h2>
         <div class="result-grid">
           <div class="result">
-            <div><div class="name">Total GC</div><div class="formula">Sum of GC values entered</div></div>
+            <div><div class="name">Total GC</div><div class="formula"> Total GC </div></div>
             <output id="totalGc">—</output>
           </div>
           <div class="result">
@@ -127,7 +127,7 @@
             <output id="sales">—</output>
           </div>
           <div class="result">
-            <div><div class="name">Labor</div><div class="formula">(Crew HR × $68.75 ÷ Sales) × 100</div></div>
+            <div><div class="name">Labor</div><div class="formula">(Crew HR × 68.75 ÷ Sales) × 100</div></div>
             <output id="labor">—</output>
           </div>
           <div class="result">
@@ -135,10 +135,10 @@
             <output id="gcpch">—</output>
           </div>
         </div>
-        <p class="note">Labor is shown as a percentage. GCPCH is GC per crew hour. Results are calculated in your browser; nothing you enter is uploaded.</p>
+        <p class="note">Labor is shown as a percentage. GCPCH is GC per crew hour.</p>
       </section>
     </section>
-    <footer>Simple, private, and ready to publish with GitHub Pages.</footer>
+    <footer>Simple. HEHE</footer>
   </main>
 
   <script>
