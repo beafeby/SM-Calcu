@@ -83,15 +83,15 @@
     <header>
       <div class="eyebrow">For Reports</div>
       <h1>Service Manager Calculator</h1>
-      <p>Enter your Projected AC.</p>
+      <p>by : FEBY.</p>
     </header>
 
     <section class="panel" aria-label="Calculator">
       <div class="fields">
         <div class="field">
-          <label for="ac">AC</label>
+          <label for="ac">AC (Average Count)</label>
           <input id="ac" type="number" min="0" step="any" inputmode="decimal" placeholder="Enter AC">
-          <span class="hint">Enter the AC value.</span>
+          <span class="hint">Enter Projected AC.</span>
         </div>
         <div class="field">
           <label for="hours">Crew Total HR</label>
@@ -143,7 +143,7 @@
 
   <script>
     const $ = (id) => document.getElementById(id);
-    const money = new Intl.NumberFormat(undefined, { style: "currency", currency: "USD", maximumFractionDigits: 2 });
+    const money = new Intl.NumberFormat(undefined, { style: "currency", currency: "₱", maximumFractionDigits: 2 });
     const number = new Intl.NumberFormat(undefined, { maximumFractionDigits: 2 });
 
     function showError(message) {
