@@ -143,7 +143,7 @@
 
   <script>
     const $ = (id) => document.getElementById(id);
-    const money = new Intl.NumberFormat(undefined, { style: "currency", currency: "₱", maximumFractionDigits: 2 });
+    const money = new Intl.NumberFormat("en-PH", {style: "currency", currency: "PHP",maximumFractionDigits: 2});
     const number = new Intl.NumberFormat(undefined, { maximumFractionDigits: 2 });
 
     function showError(message) {
